@@ -41,7 +41,7 @@
             background: rgba(18, 28, 22, 0.45);
         }
 
-        /* Gallery Slider */
+        /* Gallery Slider Styles */
         .slide {
             display: none;
             opacity: 0;
@@ -67,7 +67,7 @@
             <nav class="hidden md:flex gap-8 font-medium text-stone-700 text-sm">
                 <a href="#about" class="hover:text-emerald-800 transition">عن الإقامة</a>
                 <a href="#services" class="hover:text-emerald-800 transition">الخدمات</a>
-                <a href="#activities" class="hover:text-emerald-800 transition">الأنشطة والتجارب</a>
+                <a href="#activities" class="hover:text-emerald-800 transition">الأنشطة</a>
                 <a href="#rooms" class="hover:text-emerald-800 transition">الغرف والأجنحة</a>
                 <a href="#gallery" class="hover:text-emerald-800 transition">المعرض</a>
                 <a href="#contact" class="hover:text-emerald-800 transition">التواصل</a>
@@ -97,7 +97,7 @@
                     الحجز عبر الواتساب
                 </a>
                 <a href="#gallery" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-3.5 rounded-lg font-medium backdrop-blur-sm transition">
-                    استكشف الإقامة
+                    معرض الصور الحقيقي
                 </a>
             </div>
         </div>
@@ -120,137 +120,48 @@
                     <div class="grid grid-cols-2 gap-6 pt-4 border-t border-stone-200">
                         <div>
                             <h4 class="font-bold text-stone-800 text-base">مسبح خارجي</h4>
-                            <p class="text-stone-500 text-xs mt-1">مسبح واسع مخصص للاسترخاء في أوقات النهار.</p>
+                            <p class="text-stone-500 text-xs mt-1">مسبح واسع مخصص للاسترخاء فـ أوقات النهار.</p>
                         </div>
                         <div>
                             <h4 class="font-bold text-stone-800 text-base">مطعم مغربي أصيل</h4>
                             <p class="text-stone-500 text-xs mt-1">أطباق محليّة طازجة بلمسة تقليدية.</p>
                         </div>
-                        <div>
-                            <h4 class="font-bold text-stone-800 text-base">إنترنت عالي السرعة</h4>
-                            <p class="text-stone-500 text-xs mt-1">تغطية Wi-Fi شاملة داخل الإقامة.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-stone-800 text-base">موقف سيارات آمن</h4>
-                            <p class="text-stone-500 text-xs mt-1">مساحة خاصة ومجانية لسيارات النزلاء.</p>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section id="services" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-stone-800">خدمات الإقامة</h2>
-                <p class="text-stone-500 mt-3 text-sm">كل ما تحتاجه لإقامة هادئة ومريحة بين أحضان الطبيعة</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-xl bg-stone-50 border border-stone-200/80 hover:shadow-md transition">
-                    <i class="fa-solid fa-tree text-emerald-800 text-2xl mb-4"></i>
-                    <h3 class="text-xl font-bold text-stone-800 mb-2">حديقة واسعة</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">مساحات خضراء هادئة مجهزة بجلسات مريحة للاستمتاع بالطبيعة والجو النقي.</p>
-                </div>
-                <div class="p-8 rounded-xl bg-stone-50 border border-stone-200/80 hover:shadow-md transition">
-                    <i class="fa-solid fa-bed text-emerald-800 text-2xl mb-4"></i>
-                    <h3 class="text-xl font-bold text-stone-800 mb-2">غرف مجهزة</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">غرف وأجنحة مصممة بعناية لتضمن راحة تامّة مع حمام خاص وتكييف.</p>
-                </div>
-                <div class="p-8 rounded-xl bg-stone-50 border border-stone-200/80 hover:shadow-md transition">
-                    <i class="fa-solid fa-mountain text-emerald-800 text-2xl mb-4"></i>
-                    <h3 class="text-xl font-bold text-stone-800 mb-2">إطلالة بانورامية</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">مشاهد ساحرة ومباشرة على سلاسل جبال الأطلس والوديان المجاورة.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ACTIVITIES SECTION -->
-    <section id="activities" class="py-24 bg-emerald-950 text-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase">Outdoor Experiences & Leisure</span>
-                <h2 class="text-3xl md:text-4xl font-bold">الأنشطة والتجارب الخارجية</h2>
-                <p class="text-stone-300 text-sm font-light">
-                    Activités de Plein Air • Outdoor Activities
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-                <!-- Activity 1: Picnic & Hiking -->
-                <div class="bg-emerald-900/40 p-8 rounded-2xl border border-emerald-800/80 hover:border-amber-400/50 transition space-y-4">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-lg bg-emerald-800/80 flex items-center justify-center text-amber-300">
-                            <i class="fa-solid fa-person-hiking text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-stone-100">النزهات والمسارات الطبيعية</h3>
-                            <span class="text-xs text-amber-300/80 font-mono">Balades, Pique-nique & Randonnées</span>
-                        </div>
-                    </div>
-                    <p class="text-stone-300 text-sm leading-relaxed pt-2">
-                        جولات مشي واستكشاف رفقة مرشدين عبر مسارات الغابة وضفاف النهر المحيطة بـ تحناوت، مع إمكانية تنظيم جلسات نزهة (Pique-nique) وسط الطبيعة.
-                    </p>
-                </div>
-
-                <!-- Activity 2: Horse Riding -->
-                <div class="bg-emerald-900/40 p-8 rounded-2xl border border-emerald-800/80 hover:border-amber-400/50 transition space-y-4">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-lg bg-emerald-800/80 flex items-center justify-center text-amber-300">
-                            <i class="fa-solid fa-horse text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-stone-100">ركوب الخيل</h3>
-                            <span class="text-xs text-amber-300/80 font-mono">Randonnée Équestre / Horse Riding</span>
-                        </div>
-                    </div>
-                    <p class="text-stone-300 text-sm leading-relaxed pt-2">
-                        جولات ممتازة لركوب الخيل عبر التلال الجبلية والمناظر الطبيعية الخلابة، مؤطرة ومناسبة للجميع بما في ذلك المبتدئين والعائلات.
-                    </p>
-                </div>
-            </div>
-
-            <div class="mt-14 text-center">
-                <a href="https://wa.me/212660954956?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20برنامج%20الأنشطة" target="_blank" class="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-stone-950 font-semibold px-8 py-3.5 rounded-lg text-sm transition shadow-lg">
-                    <i class="fab fa-whatsapp text-lg"></i>
-                    الاستفسار عن برنامج الأنشطة | Book Activities
-                </a>
             </div>
         </div>
     </section>
 
     <!-- ROOMS SECTION -->
-    <section id="rooms" class="py-24 bg-stone-100/60">
+    <section id="rooms" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-stone-800">الغرف والأجنحة</h2>
-                <p class="text-stone-500 mt-2 text-sm">خيارات هادئة ومريحة للإقامة الفردية والعائلية</p>
+                <h2 class="text-3xl font-bold text-stone-800">الغرف والأجنحة الحقيقية</h2>
+                <p class="text-stone-500 mt-2 text-sm">خيارات مريحة ومصممة بالطابع التقليدي المغربي</p>
             </div>
             <div class="grid md:grid-cols-2 gap-10">
-                <div class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-md transition">
-                    <img src="images/room1.jpg" alt="غرفة مزدوجة" class="w-full h-72 object-cover">
+                <div class="bg-stone-50 rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-md transition">
+                    <img src="images/room1.jpg" alt="غرفة مزدوجة" class="w-full h-80 object-cover">
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-stone-800">غرفة مزدوجة (Chambre Double)</h3>
                         <p class="text-stone-600 mt-3 text-sm leading-relaxed">
-                            مجهزة بسرير مزدوج فاخر، حمام خاص، تكييف، وإطلالة مباشرة على الحدائق.
+                            سرير مزدوج فاخر، ديكور بلدي تقليدي، حمام خاص، وتكييف.
                         </p>
                         <a href="https://wa.me/212660954956?text=استفسار%20عن%20حجز%20غرفة%20مزدوجة" target="_blank" class="inline-block mt-6 bg-emerald-800 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-emerald-900 transition">
-                            تفاصيل الحجز
+                            احجز هذه الغرفة
                         </a>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-md transition">
-                    <img src="images/room2.jpg" alt="غرفة عائلية" class="w-full h-72 object-cover">
+                <div class="bg-stone-50 rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-md transition">
+                    <img src="images/room2.jpg" alt="جناح عائلي" class="w-full h-80 object-cover">
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-stone-800">جناح عائلي (Suite Familiale)</h3>
                         <p class="text-stone-600 mt-3 text-sm leading-relaxed">
-                            مساحة واسعة تلائم العائلات مع جلسة خاصة وإطلالات بانورامية على المسبح والجبال.
+                            مساحة واسعة تلائم العائلات مع إطلالة رائعة على الطبيعة والمسبح.
                         </p>
-                        <a href="https://wa.me/212660954956?text=استفسار%20عن%20حجز%20غرفة%20عائلية" target="_blank" class="inline-block mt-6 bg-emerald-800 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-emerald-900 transition">
-                            تفاصيل الحجز
+                        <a href="https://wa.me/212660954956?text=استفسار%20عن%20حجز%20جناح%20عائلي" target="_blank" class="inline-block mt-6 bg-emerald-800 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-emerald-900 transition">
+                            احجز هذا الجناح
                         </a>
                     </div>
                 </div>
@@ -258,37 +169,26 @@
         </div>
     </section>
 
-    <!-- GALLERY SLIDER SECTION WITH REAL IMAGES -->
-    <section id="gallery" class="py-24 bg-white">
+    <!-- GALLERY SLIDER SECTION -->
+    <section id="gallery" class="py-24 bg-stone-100/60">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-stone-800 mb-4">معرض الصور الحقيقي</h2>
-            <p class="text-center text-stone-500 text-sm mb-12">اكتشف أجواء الإقامة الإيكولوجية والتفاصيل الطبيعية بدار بوحوتة</p>
+            <h2 class="text-3xl font-bold text-center text-stone-800 mb-4">معرض الصور من قلب Dar Bouhouta</h2>
+            <p class="text-center text-stone-500 text-sm mb-12">صور حقيقية للإقامة من مختلف المنصات (Booking / Airbnb)</p>
             
             <div class="relative rounded-2xl overflow-hidden shadow-xl h-[450px] md:h-[550px] bg-stone-900">
-                <!-- Real Slides -->
                 <div class="slide active h-full w-full">
-                    <img src="images/hero.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta - Pool & Tajine">
+                    <img src="images/hero.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta Outdoor">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/night.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta Night View">
+                    <img src="images/pool.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta Pool">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/pool.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta Pool Area">
+                    <img src="images/restaurant.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta Dining Area">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/restaurant.jpg" class="w-full h-full object-cover" alt="Saloon & Dining Room">
-                </div>
-                <div class="slide h-full w-full">
-                    <img src="images/about.jpg" class="w-full h-full object-cover" alt="Nature Pathway">
-                </div>
-                <div class="slide h-full w-full">
-                    <img src="images/gallery-extra1.jpg" class="w-full h-full object-cover" alt="Outdoor Patio Night">
-                </div>
-                <div class="slide h-full w-full">
-                    <img src="images/gallery-extra2.jpg" class="w-full h-full object-cover" alt="Fresh Olives & Flowers">
+                    <img src="images/gallery-extra.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta Scenery">
                 </div>
 
-                <!-- Navigation Buttons -->
                 <button onclick="prevSlide()" class="absolute right-5 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white w-11 h-11 rounded-full flex items-center justify-center transition">
                     <i class="fa-solid fa-chevron-right text-base"></i>
                 </button>
@@ -311,33 +211,15 @@
                     <div class="space-y-4 pt-4 text-sm">
                         <p class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-emerald-500"></i> دوار زاوية بوحوتة، تحناوت، إقليم الحوز، المغرب</p>
                         <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-emerald-500"></i> +212 660 954956</p>
-                        <p class="flex items-center gap-3"><i class="fa-solid fa-envelope text-emerald-500"></i> contact@darbouhouta.com</p>
-                    </div>
-                    <div class="pt-6 flex gap-4">
-                        <a href="https://wa.me/212660954956" target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-3 rounded-lg text-sm font-medium transition flex items-center gap-2">
-                            <i class="fab fa-whatsapp text-base"></i> واتساب المباشر
-                        </a>
-                        <a href="tel:+212660954956" class="bg-stone-800 hover:bg-stone-700 text-white px-6 py-3 rounded-lg text-sm font-medium transition flex items-center gap-2">
-                            <i class="fa-solid fa-phone text-xs"></i> اتصال هاتفي
-                        </a>
                     </div>
                 </div>
                 <div>
-                    <iframe src="https://www.google.com/maps?q=Tahanaout,Morocco&output=embed" class="w-full h-[380px] rounded-2xl border-0 shadow-lg" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps?q=Tahanaout,Morocco&output=embed" class="w-full h-[320px] rounded-2xl border-0 shadow-lg" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-black text-stone-500 py-8 text-xs border-t border-stone-800">
-        <div class="max-w-7xl mx-auto px-6 text-center space-y-2">
-            <p class="text-stone-300 font-semibold text-sm">Ecolodge Dar Bouhouta</p>
-            <p>© 2026 Tous droits réservés • All rights reserved</p>
-        </div>
-    </footer>
-
-    <!-- SLIDER SCRIPT -->
     <script>
         let slides = document.querySelectorAll(".slide");
         let current = 0;
@@ -359,6 +241,5 @@
 
         setInterval(nextSlide, 4500);
     </script>
-
 </body>
 </html>
