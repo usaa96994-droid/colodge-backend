@@ -12,4 +12,5 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Essential export for Vercel Serverless Function
 module.exports = app;
