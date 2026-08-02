@@ -40,6 +40,18 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.45);
         }
+
+        /* Slider Styles */
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            display: block;
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -55,6 +67,7 @@
             <nav class="hidden md:flex gap-8 font-medium">
                 <a href="#about" class="hover:text-green-700 transition">عن الدار</a>
                 <a href="#services" class="hover:text-green-700 transition">الخدمات</a>
+                <a href="#activities" class="hover:text-green-700 transition">الأنشطة</a>
                 <a href="#rooms" class="hover:text-green-700 transition">الغرف</a>
                 <a href="#gallery" class="hover:text-green-700 transition">الصور</a>
                 <a href="#contact" class="hover:text-green-700 transition">تواصل</a>
@@ -155,6 +168,47 @@
         </div>
     </section>
 
+    <!-- ACTIVITIES SECTION -->
+    <section id="activities" class="py-20 bg-emerald-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="bg-amber-500/20 text-amber-300 border border-amber-400/30 px-4 py-1.5 rounded-full text-sm font-medium inline-block">
+                    🌲 مغامرات الطبيعة فـ تحناوت
+                </span>
+                <h2 class="text-4xl font-bold mt-4">الأنشطة والرياضات الجبلية</h2>
+                <p class="text-stone-300 mt-3">عيش تجربة فريدة واستمتع بالهواء النقي وسط غابات وجبال تحناوت</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Activity 1: Hiking -->
+                <div class="bg-emerald-800/60 rounded-3xl p-8 border border-emerald-700/50 hover:border-amber-400 transition shadow-lg flex flex-col items-center text-center">
+                    <div class="text-6xl mb-4">🥾</div>
+                    <h3 class="text-2xl font-bold text-amber-300 mb-3">التساركل فـ الغابة وجنب النهر (Hiking)</h3>
+                    <p class="text-stone-200 text-base leading-relaxed">
+                        جولات ومشي على الأقدام وسط الأشجار والهدوء، مع مسارات ساحرة على ضفاف الوادي والنهر لمستويات مختلفة.
+                    </p>
+                </div>
+
+                <!-- Activity 2: Horse Riding -->
+                <div class="bg-emerald-800/60 rounded-3xl p-8 border border-emerald-700/50 hover:border-amber-400 transition shadow-lg flex flex-col items-center text-center">
+                    <div class="text-6xl mb-4">🐎</div>
+                    <h3 class="text-2xl font-bold text-amber-300 mb-3">ركوب الخيل (Horse Riding)</h3>
+                    <p class="text-stone-200 text-base leading-relaxed">
+                        تجربة ركوب الخيل وسط المناظر الطبيعية الخلابة وتلال تحناوت، مناسبة للمبتدئين والعائلات مع مواكبة وتأطير.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Call to action -->
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/212660954956?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20أنشطة%20الـ%20Hiking%20وركوب%20الخيل" target="_blank" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-stone-900 font-bold px-8 py-4 rounded-xl shadow-lg transition">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    استفسر عن الأنشطة عبر الواتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- ROOMS SECTION -->
     <section id="rooms" class="py-20 bg-stone-100">
         <div class="max-w-7xl mx-auto px-6">
@@ -189,20 +243,48 @@
         </div>
     </section>
 
-    <!-- GALLERY SECTION -->
+    <!-- GALLERY SLIDER SECTION -->
     <section id="gallery" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12">معرض الصور</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <img src="images/hero.jpg" alt="Dar Bouhouta" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
-                <img src="images/about.jpg" alt="Dar Bouhouta" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
-                <img src="images/room1.jpg" alt="غرفة" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
-                <img src="images/room2.jpg" alt="غرفة عائلية" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
-                <img src="images/pool.jpg" alt="المسبح" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
-                <img src="images/restaurant.jpg" alt="المطعم" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
-                <img src="images/night.jpg" alt="الدار ليلا" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
-                <img src="images/garden.jpg" alt="الحديقة" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
-                <img src="images/parking.jpg" alt="موقف السيارات" class="rounded-2xl shadow-lg hover:scale-105 duration-300 cursor-pointer h-64 w-full object-cover">
+            
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[450px] md:h-[550px] group">
+                <!-- Slides -->
+                <div class="slide active h-full w-full">
+                    <img src="images/hero.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta">
+                </div>
+                <div class="slide h-full w-full">
+                    <img src="images/about.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta">
+                </div>
+                <div class="slide h-full w-full">
+                    <img src="images/pool.jpg" class="w-full h-full object-cover" alt="المسبح">
+                </div>
+                <div class="slide h-full w-full">
+                    <img src="images/room1.jpg" class="w-full h-full object-cover" alt="الغرفة">
+                </div>
+                <div class="slide h-full w-full">
+                    <img src="images/room2.jpg" class="w-full h-full object-cover" alt="الغرفة العائلية">
+                </div>
+                <div class="slide h-full w-full">
+                    <img src="images/restaurant.jpg" class="w-full h-full object-cover" alt="المطعم">
+                </div>
+                <div class="slide h-full w-full">
+                    <img src="images/night.jpg" class="w-full h-full object-cover" alt="الليل">
+                </div>
+                <div class="slide h-full w-full">
+                    <img src="images/garden.jpg" class="w-full h-full object-cover" alt="الحديقة">
+                </div>
+                <div class="slide h-full w-full">
+                    <img src="images/parking.jpg" class="w-full h-full object-cover" alt="الموقف">
+                </div>
+
+                <!-- Navigation Buttons (Next / Prev) -->
+                <button onclick="prevSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white w-12 h-12 rounded-full flex items-center justify-center transition">
+                    <i class="fa-solid fa-chevron-right text-xl"></i>
+                </button>
+                <button onclick="nextSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white w-12 h-12 rounded-full flex items-center justify-center transition">
+                    <i class="fa-solid fa-chevron-left text-xl"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -245,6 +327,30 @@
             <p class="mt-4">© 2026 جميع الحقوق محفوظة.</p>
         </div>
     </footer>
+
+    <!-- SLIDER SCRIPT -->
+    <script>
+        let slides = document.querySelectorAll(".slide");
+        let current = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[index].classList.add("active");
+        }
+
+        function nextSlide() {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        }
+
+        function prevSlide() {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+        }
+
+        // Auto play slider every 3 seconds
+        let autoSlide = setInterval(nextSlide, 3000);
+    </script>
 
 </body>
 </html>
