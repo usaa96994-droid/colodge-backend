@@ -38,7 +38,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(18, 28, 22, 0.55);
+            background: rgba(18, 28, 22, 0.45);
         }
 
         /* Gallery Slider */
@@ -167,7 +167,7 @@
         </div>
     </section>
 
-    <!-- ACTIVITIES SECTION (PROFESSIONAL & MULTILANGUAGE) -->
+    <!-- ACTIVITIES SECTION -->
     <section id="activities" class="py-24 bg-emerald-950 text-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
@@ -193,10 +193,6 @@
                     <p class="text-stone-300 text-sm leading-relaxed pt-2">
                         جولات مشي واستكشاف رفقة مرشدين عبر مسارات الغابة وضفاف النهر المحيطة بـ تحناوت، مع إمكانية تنظيم جلسات نزهة (Pique-nique) وسط الطبيعة.
                     </p>
-                    <div class="pt-3 border-t border-emerald-800/60 text-xs text-stone-400 space-y-1 font-light">
-                        <p><strong class="text-stone-200">FR:</strong> Randonnées guidées en forêt et le long de la rivière avec pauses pique-nique.</p>
-                        <p><strong class="text-stone-200">EN:</strong> Guided nature walks, riverside hiking trails, and outdoor picnics.</p>
-                    </div>
                 </div>
 
                 <!-- Activity 2: Horse Riding -->
@@ -213,10 +209,6 @@
                     <p class="text-stone-300 text-sm leading-relaxed pt-2">
                         جولات ممتازة لركوب الخيل عبر التلال الجبلية والمناظر الطبيعية الخلابة، مؤطرة ومناسبة للجميع بما في ذلك المبتدئين والعائلات.
                     </p>
-                    <div class="pt-3 border-t border-emerald-800/60 text-xs text-stone-400 space-y-1 font-light">
-                        <p><strong class="text-stone-200">FR:</strong> Balades équestres encadrées à travers les collines de Tahanaout.</p>
-                        <p><strong class="text-stone-200">EN:</strong> Horseback riding excursions through scenic hill trails with professional guides.</p>
-                    </div>
                 </div>
             </div>
 
@@ -266,33 +258,34 @@
         </div>
     </section>
 
-    <!-- GALLERY SLIDER SECTION -->
+    <!-- GALLERY SLIDER SECTION WITH REAL IMAGES -->
     <section id="gallery" class="py-24 bg-white">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-stone-800 mb-12">معرض الصور</h2>
+            <h2 class="text-3xl font-bold text-center text-stone-800 mb-4">معرض الصور الحقيقي</h2>
+            <p class="text-center text-stone-500 text-sm mb-12">اكتشف أجواء الإقامة الإيكولوجية والتفاصيل الطبيعية بدار بوحوتة</p>
             
-            <div class="relative rounded-2xl overflow-hidden shadow-lg h-[450px] md:h-[520px] bg-stone-900">
-                <!-- Slides -->
+            <div class="relative rounded-2xl overflow-hidden shadow-xl h-[450px] md:h-[550px] bg-stone-900">
+                <!-- Real Slides -->
                 <div class="slide active h-full w-full">
-                    <img src="images/hero.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta">
+                    <img src="images/hero.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta - Pool & Tajine">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/about.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta">
+                    <img src="images/night.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta Night View">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/pool.jpg" class="w-full h-full object-cover" alt="المسبح">
+                    <img src="images/pool.jpg" class="w-full h-full object-cover" alt="Dar Bouhouta Pool Area">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/room1.jpg" class="w-full h-full object-cover" alt="الغرفة">
+                    <img src="images/restaurant.jpg" class="w-full h-full object-cover" alt="Saloon & Dining Room">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/room2.jpg" class="w-full h-full object-cover" alt="الغرفة العائلية">
+                    <img src="images/about.jpg" class="w-full h-full object-cover" alt="Nature Pathway">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/restaurant.jpg" class="w-full h-full object-cover" alt="المطعم">
+                    <img src="images/gallery-extra1.jpg" class="w-full h-full object-cover" alt="Outdoor Patio Night">
                 </div>
                 <div class="slide h-full w-full">
-                    <img src="images/night.jpg" class="w-full h-full object-cover" alt="الليل">
+                    <img src="images/gallery-extra2.jpg" class="w-full h-full object-cover" alt="Fresh Olives & Flowers">
                 </div>
 
                 <!-- Navigation Buttons -->
@@ -364,7 +357,7 @@
             showSlide(current);
         }
 
-        setInterval(nextSlide, 4000);
+        setInterval(nextSlide, 4500);
     </script>
 
 </body>
